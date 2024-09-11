@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        javascript course
+    </title>
+
+</head>
+
+
+<style>
+    .Cart-button {
+        background-color: cadetblue;
+        border-color: black;
+    }
+    
+    .numbers {
+        color: black;
+        background-color: aquamarine;
+        border-color: black;
+    }
+</style>
+
+<body>
+    <p>HEllO!!</p>
+    <!--Cart Quantity Project-->
+
+    <button class="Cart-button" onclick="
+     
+        items ++;
+        console.log(`Items Quantity :`+items );
+    ">Add to cart </button>
+
+    <button class="numbers" onclick="
+      items += 2;
+      console.log('Items Quantity :'+items);
+    ">
+        +2
+    </button>
+
+
+    <button class="numbers" onclick="
+      items += 3;
+      console.log('Items Quantity : '+items);
+    ">+3</button>
+
+
+    <button class="numbers" onclick="
+     items += 4;
+     console.log('Items Quantity :',items);
+     ">+4</button>
+
+    <button class="numbers" onclick="
+      items += 5;
+      console.log('Items Quantity : ',items);
+      ">+5</button>
+
+    <button class="numbers" onclick="
+    items -= 2;
+    console.log('Items Quantity Decreased\nUpdated Quantity :',items);">
+      -2
+    </button>
+    <button class="Cart-button" onclick="
+      items = 0 ;
+      console.log('Reset Succesfully\nCart Item :',items);
+      ">Reset </button>
+
+
+    <script>
+        var name = 'Kanha';
+        console.log(name);
+        console.log('My name is: ${', name, '}');
+
+        //comment for ques no . 5C4
+        let tCost = 5 + 3 + 9;
+
+        console.log('Cost of Food : $' + tCost);
+        var result = (tCost * 0.1);
+        console.log('$' + Math.round(tCost - result));
+
+
+        //cart project 
+        let items = 0;
+    </script>
+
+</body>
+
+</html>
