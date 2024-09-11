@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> flip-coin-game </title>
+    </head>
+
+    <body>
+        <p>Have a good day </p>
+
+
+        <script>
+            let randomNumber = Math.random();
+            let rslt = '';
+
+            if (randomNumber < 0.5){
+                rslt  = 'Heads ';
+            }else{
+                rslt = 'Tails ';
+            }
+
+            let guess = 'Heads';
+
+            if (rslt === guess){
+                console.log(`You choose ${guess}. Computer choose ${rslt}.\nYou Win !!`);
+            }else{
+                console.log(`You choose ${guess}. Computer choose ${rslt}.\nYou Loose !!`);
+            }
+        </script>
+    </body>
+</html>

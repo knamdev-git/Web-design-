@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Exercise </title>
+    </head>
+
+    <body>
+        <p>Have a good day </p>
+
+
+        <script>
+            //Displaying time according to ours 
+            let hour = 7 ;
+            let name = 'Kanha' ;
+        
+            if (hour >= 6 && hour <= 12) {
+                console.log(`Good Morning ${name}`);
+            } 
+            else if(hour >= 13 && hour <= 17){
+                console.log('Good Afternoon '+name);                
+            }
+            else{
+                console.log('Good Night '+name);
+            }
+
+            //Amusement park Discount or not
+            let age= 99 ;
+            const isHoliday = true;
+            
+            if (age <= 6 || (age >= 65 && age <= 100)) {
+                
+                if(isHoliday === false)
+                    console.log(`Horrrey !!! \nDiscount for ${age} Years Old People `);
+                else
+                    console.log('Today is Holiday ');         
+                
+            } else {
+                console.log(`No Discount for ${age} Years Old People`);   
+            }
+        </script>
+    </body>
+</html>
