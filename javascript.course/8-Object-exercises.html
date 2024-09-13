@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Objects
+        </title>
+    </head>
+
+    <body>
+        <P>Hello User <br> Welcome in my Webpage </P>
+        
+        <script>
+            //8a : Creating an object 
+            product1 = {
+                name : 'SHOES' ,
+                price : 2095 ,
+            };
+
+            console.log(typeof product1);
+            console.log(product1);
+
+            //8b : Increase the size of produc by 500
+            product1.price += 500;
+            console.log(product1.price); // 2095 + 500 = 2595
+
+            product1['delivery-time'] = '3 days ';
+            console.log(product1);
+            
+            //8d : Creating the another product and compare 
+            product2 = {
+                name : 'Shoes',
+                price : 100 ,
+                'delivery-time' : '2 days'    
+            };
+
+            console.log(product2);
+            comparePrice(product1,product2);
+            isSameProduct(product1,product2);
+
+            // 8D 1) : compare function
+            function comparePrice(product1 , product2) {
+                if(product1.price > product2.price){
+                    console.log(`${product2.name} is cheaper \nCost : ${product2.price} /- only`);
+                }
+                else{
+                    console.log(`${product1.name} is cheaper \nCost : ${product1.price} /- only`); 
+                }
+            }
+            
+            function isSameProduct(product1,product2) {
+                if (product1.name === product2.name) 
+                    console.log(`Product name is Same : ${product1.name}`);
+                else
+                    console.log("Product name is Different ");
+            }
+
+            console.log(product1.name.repeat(2)); // SHOES -> shoes
+
+            
+        </script>
+
+    </body>
+</html>
